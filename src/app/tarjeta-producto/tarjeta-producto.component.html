@@ -1,0 +1,9 @@
+<div class="tarjeta">
+  <h2>Nombre del producto: {{ nombreProducto }}</h2>
+  <p>Precio del producto: {{ precioProducto }} </p>
+  <p> {{mensaje}} </p>
+  <input type="text" [(ngModel)]="mensaje">
+  <button (click)="saludo2()">Saludo</button>
+  <input type="number" [(ngModel)]="precioProducto">
+  <button (click)="descuento()">Aplicar descuento</button>
+</div>

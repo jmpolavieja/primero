@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
+import {FormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-saludo',
   standalone: true,
-  imports: [],
+  imports: [
+    FormsModule
+  ],
   templateUrl: './saludo.component.html',
   styleUrl: './saludo.component.css'
 })
 export class SaludoComponent {
-
+  mensaje: string = 'Este es un mensaje de texto';
 }

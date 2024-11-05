@@ -1,0 +1,9 @@
+<div id="user">
+  <h2>Ficha de Usuario</h2>
+  <p>Nombre: {{ user.name }}</p>
+  <p>Apellidos: {{ user.apellidos }}</p>
+  <p>Edad: {{user.edad}} años.  </p>
+</div>
+
+<input type="text" [(ngModel)]="user.name">
+<button (click)="reseteaNombre()">Resetear Nombre</button>
